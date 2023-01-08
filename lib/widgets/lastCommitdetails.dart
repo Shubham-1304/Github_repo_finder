@@ -79,7 +79,7 @@ class _LastCommitDetailsState extends State<LastCommitDetails> {
                       fontWeight: FontWeight.bold,
                     ),
                     CustomText(
-                      text: "Date:  ${date}, Time: ${time}}",
+                      text: "Date:  ${date}, Time: ${time}",
                       shadow: [
                         Shadow(color: Colors.blue),
                       ],
