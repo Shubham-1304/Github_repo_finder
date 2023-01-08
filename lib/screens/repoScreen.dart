@@ -17,15 +17,17 @@ class _RepoScreenState extends State<RepoScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: SearchBar(),
-          ),
-          RepoList(),
-        ],
+      body: SingleChildScrollView(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: SearchBar(),
+            ),
+            RepoList(),
+          ],
+        ),
       ),
     );
   }

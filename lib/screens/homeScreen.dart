@@ -13,10 +13,26 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text('START'),
-            SizedBox(height: 10,),
+            Container(
+              decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        color: Color.fromRGBO(16, 13, 34, 1),
+                        boxShadow: [
+                          BoxShadow(
+                            blurRadius: 8,
+                            spreadRadius: 2,
+                            color: Colors.blue,
+                          )
+                        ],
+                      ),
+              child: Text('Repo-Directory'),
+            ),
+            SizedBox(
+              height: 20,
+            ),
             ElevatedButton(
-              onPressed: () => Navigator.of(context).pushNamed(RepoScreen.routes),
+              onPressed: () =>
+                  Navigator.of(context).pushNamed(RepoScreen.routes),
               child: Text('Check Repo'),
             ),
           ],
